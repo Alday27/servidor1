@@ -4,25 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reciclaje Inteligente</title>
+
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS propio -->
     <link rel="stylesheet" href="reciclaje.css">
-   
+
+    <!-- Ajuste de tono verde -->
+    <style>
+        header {
+            background: linear-gradient(135deg, #1b5e20, #4caf50);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header a {
+            color: #e8f5e9;
+            margin: 0 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        header a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background: #e8f5e9;
+            color: #1b5e20;
+            font-size: 1.5rem;
+            text-align: center;
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 12px;
+            font-weight: bold;
+        }
+
+        h2 {
+            color: #1b5e20;
+        }
+
+        .card {
+            border-radius: 16px;
+            box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+        }
+    </style>
 </head>
+
 <body>
 
-    <header>
-        <h1>Reciclaje Inteligente</h1>
-        <p>Transformando residuos en oportunidades</p>
-             <a href="index.html">Inicio</a>
-        <a href="reciclaje.html">Reciclaje</a>
-        <a href="reforestacion.html">Reforestacion</a>
-        <a href="sensibilizacion.html">Sensibilizate</a>
-      <a href="ods.html">ODS</a>
-
-    </header>
+<header>
+    <h1>Reciclaje Inteligente</h1>
+    <p>Transformando residuos en oportunidades</p>
 
     <nav>
-   
+        <a href="index.html">Inicio</a>
+        <a href="reciclaje.html">Reciclaje</a>
+        <a href="reforestacion.html">Reforestación</a>
+        <a href="sensibilizacion.html">Sensibilízate</a>
+        <a href="ods.html">ODS</a>
+    </nav>
+</header>
+
+<div class="container mt-4">
+
     <div class="hero">
         ¡Reciclar es el primer paso para cambiar el mundo!
     </div>
@@ -30,7 +77,7 @@
     <div class="section">
         <h2>¿Por qué reciclar?</h2>
         <p>
-            El reciclaje ayuda a reducir la contaminación, ahorrar energía y dar una segunda vida a materiales que usamos todos los días. 
+            El reciclaje ayuda a reducir la contaminación, ahorrar energía y dar una segunda vida a materiales que usamos todos los días.
             Reciclar PET, papel y aluminio puede disminuir toneladas de desechos que terminarían contaminando nuestro planeta.
         </p>
     </div>
@@ -38,25 +85,31 @@
     <div class="section">
         <h2>Tipos de reciclaje</h2>
 
-        <div class="cards">
-            <div class="card">
-                <h3>PET</h3>
-                <p>Botellas, envases y plástico transparente. Debe lavarse, secarse y aplastarse antes de reciclar.</p>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card p-3 h-100">
+                    <h3>PET</h3>
+                    <p>Botellas, envases y plástico transparente. Debe lavarse, secarse y aplastarse antes de reciclar.</p>
+                </div>
             </div>
 
-            <div class="card">
-                <h3>Papel</h3>
-                <p>Cuadernos, hojas, cajas delgadas. Evita mezclar con residuos húmedos o grasosos.</p>
+            <div class="col-md-4">
+                <div class="card p-3 h-100">
+                    <h3>Papel</h3>
+                    <p>Cuadernos, hojas, cajas delgadas. Evita mezclar con residuos húmedos o grasosos.</p>
+                </div>
             </div>
 
-            <div class="card">
-                <h3>Aluminio</h3>
-                <p>Latas de refresco o alimentos. Límpialas y aplástalas para facilitar el reciclaje.</p>
+            <div class="col-md-4">
+                <div class="card p-3 h-100">
+                    <h3>Aluminio</h3>
+                    <p>Latas de refresco o alimentos. Límpialas y aplástalas para facilitar el reciclaje.</p>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="section">
+    <div class="section mt-4">
         <h2>¿Cómo separar correctamente?</h2>
         <ul>
             <li>Enjuaga los envases antes de reciclar.</li>
@@ -72,10 +125,12 @@
         <p>(Agrega un mapa, lista o ubicación si tu escuela lo pide.)</p>
     </div>
 
-  <footer class="text-center p-3 bg-dark text-white mt-5">
-    © 2025 CBTis No. 134 — Proyecto Final de PAEC
+</div>
+
+<footer class="text-center p-3 bg-dark text-white mt-5">
+    © 2025 CBTis No. 134 — Proyecto Final de PAEC  
     <br>Creado por <b>Bruno Cuenca Miranda y Juan Antonio Romero Alday</b>
-  </footer>
+</footer>
 
 </body>
 </html>
