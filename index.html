@@ -1,26 +1,92 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Prueba 1</title>
+    <title>PAEC Re/Solución</title>
     <style>
         body {
-            background: green;
-            color: white;
-            font-size: 40px;
+            margin: 0;
+            min-height: 100vh;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: linear-gradient(135deg, #1b5e20, #4caf50);
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contenedor {
+            background: rgba(255, 255, 255, 0.12);
+            padding: 50px 40px;
+            border-radius: 25px;
             text-align: center;
-            margin-top: 100px;
-            font-family: Arial, sans-serif;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+            max-width: 600px;
+            width: 90%;
+        }
+
+        h1 {
+            margin-bottom: 15px;
+            font-size: 3rem;
+        }
+
+        p {
+            font-size: 1.3rem;
+            margin-bottom: 35px;
+            color: #e8f5e9;
+        }
+
+        .menu {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            font-size: 1.1rem;
+            padding: 16px 20px;
+            border-radius: 15px;
+            background: #ffe0b2; 
+            color: #1b5e20;
+            font-weight: bold;
+            transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+        }
+
+        .menu a:hover {
+            background: #ffcc80;
+            transform: translateY(-4px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        footer {
+            margin-top: 35px;
+            font-size: 0.95rem;
+            color: #e0f2f1;
         }
     </style>
 </head>
 <body>
-    Prueba 1
 
-    <a href="ods.html">Ir a ODS</a>
-<a href="reciclaje.html">Ir a Reciclaje</a>
-<a href="reforestacion.html">Ir a seccion reforestar</a>
-<a href="sensibilizacion.html">Ir a parte de sensibilizacion</a>
+    <div class="contenedor">
+        <h1>Proyecto Re/Solución</h1>
+        <p>
+            Página principal del PAEC del CBTis 134  
+            enfocada en sostenibilidad ambiental y cuidado del entorno.
+        </p>
+
+        <div class="menu">
+            <a href="ods.html">ODS</a>
+            <a href="reciclaje.html">Reciclaje</a>
+            <a href="reforestacion.html">Reforestación</a>
+            <a href="sensibilizacion.html">Sensibilización</a>
+        </div>
+
+        <footer>
+            PAEC Re/Solución · CBTis 134
+        </footer>
+    </div>
+
 </body>
 </html>
