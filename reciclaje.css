@@ -1,132 +1,106 @@
+/* CONTENEDOR DEL MENÚ */
 .activorR nav {
-      background-color: #08470c;      
-      border-radius: 10px;
-      margin: 20px auto;
-      width: 90%;
-      text-align: center;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    }
+    background-color: #08470c;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
 
-    /* Quitar viñetas y espacios */
-    .activorR nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
+/* Quitar viñetas */
+.activorR nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
 
-    /* Los elementos del menú uno al lado del otro */
-    .activorR nav li {
-      display: inline-block;          /* Muestra en línea */
-      margin: 0;
-    }
+/* Elementos en línea */
+.activorR nav li {
+    display: inline-block;
+}
 
-    /* Enlaces del menú */
-    .activorR nav a {
-      display: inline-block;
-      color: white;
-      text-decoration: none;
-      padding: 15px 25px;
-      font-size: 18px;
-      transition: background-color 0.3s ease, color 0.3s ease;
-    }
+/* Enlaces */
+.activorR nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+    font-size: 18px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
 
-    /* Efecto al pasar el mouse */
-    .activorR nav a:hover {
-      background-color: #81c784;      /* Verde claro */
-      color: #000000;
-      border-radius: 10px 10px 0 0;
-    }
+/* Hover */
+.activorR nav a:hover {
+    background-color: #81c784;
+    color: black;
+    border-radius: 10px 10px 0 0;
+}
 
-    /* Estado activo del primer enlace */
-    .activorR .activoR {
-      background-color: #da890f;      /* ✅ Naranja para resaltar el primero */
-      color: white;
-      border-radius: 10px 10px 0 0;
-    }
+/* Activo */
+.activorR nav .activoR {
+    background-color: #da890f;
+    border-radius: 10px 10px 0 0;
+}
 
-    /* Contenido de ejemplo */
-    .activorR section {
-      background-color: #f1f8e9;
-      border: 2px solid #c5e1a5;
-      border-radius: 10px;
-      width: 90%;
-      margin: 20px auto;
-      padding: 20px;
-      font-size: 18px;
-    } body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f3f7f2;
-            color: #333;
-        }
+/* CONTENIDO */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3f7f2;
+    color: #333;
+}
 
-        header {
-            background-color: #2ecc71;
-            padding: 20px;
-            text-align: center;
-            color: white;
-        }
+header {
+    background-color: #2ecc71;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
 
-        nav {
-            background-color: #27ae60;
-            padding: 10px;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
+.hero {
+    background-image: url("https://images.unsplash.com/photo-1590460983841-45eb2c66004e");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 5px #000;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+}
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
+.section {
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+}
 
-        .hero {
-            background-image: url("https://images.unsplash.com/photo-1590460983841-45eb2c66004e");
-            background-size: cover;
-            background-position: center;
-            height: 300px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            text-shadow: 2px 2px 5px #000;
-            font-size: 35px;
-            font-weight: bold;
-            text-align: center;
-        }
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
-        .section {
-            padding: 40px;
-            max-width: 900px;
-            margin: auto;
-        }
+.card {
+    background: white;
+    width: 260px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
 
-        h2 {
-            color: #27ae60;
-        }
+footer {
+    background-color: #27ae60;
+    text-align: center;
+    padding: 15px;
+    color: white;
+    margin-top: 40px;
+}
 
-        .cards {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .card {
-            background: white;
-            width: 260px;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            text-align: center;
-        }
-
-        footer {
-            background-color: #27ae60;
-            text-align: center;
-            padding: 15px;
-            color: white;
-            margin-top: 40px;
-        }
     
