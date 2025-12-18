@@ -55,18 +55,17 @@
             font-size: 0.95rem;
             color: #e0f2f1;
         } 
-        body {
-    margin: 0;
-    min-height: 100vh;
-    font-family: "Segoe UI", Arial, sans-serif;
-    background:
-        url("image.png") center center / 300px no-repeat,
-        linear-gradient(135deg, #1b5e20, #4caf50);
-    color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+        body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    background: url("image.png") center center / cover no-repeat;
+
+    opacity: 0.25; 
+    z-index: 0;
 }
+
 
     </style>
 </head>
