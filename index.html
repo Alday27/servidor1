@@ -1,42 +1,43 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>PAEC Re/Solución</title>
 
     <style>
-        
-       body {
-    margin: 0;
-    min-height: 100vh;
-    font-family: "Segoe UI", Arial, sans-serif;
+        /* ====== Base del body (centrado) ====== */
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: "Segoe UI", Arial, sans-serif;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
-    background: #000; 
-    color: #ffffff;
-}
+            color: #ffffff;
+            background: #000; /* color de respaldo mientras carga la imagen */
+        }
 
-
-
+        /* ====== Imagen de fondo: ocupa toda la pantalla y NO se mezcla ====== */
         body::before {
             content: "";
             position: fixed;
             inset: 0;
 
             background: url("image.png") center center / cover no-repeat;
-            opacity: 0.25;
+            opacity: 1;              /* imagen en su color real */
             z-index: 0;
+            pointer-events: none;    /* deja pasar clicks al contenido */
         }
-        
 
+        /* ====== Contenedor: ahora con fondo VERDE sólido ====== */
         .contenedor {
-            position: relative;   /* AGREGADO */
-            z-index: 1;           /* AGREGADO */
+            position: relative;
+            z-index: 1;
 
-            background: rgba(255, 255, 255, 0.12);
+            /* Fondo verde sólido (ajusta transparencia si quieres algo leve) */
+            background: rgba(27,94,32,0.95); /* #1b5e20 con leve opacidad */
             padding: 50px 40px;
             border-radius: 25px;
             text-align: center;
@@ -94,7 +95,7 @@
         <h1>Proyecto Re/Solución</h1>
 
         <p>
-            Página principal del PAEC del CBTis 134  
+            Página principal del PAEC del CBTis 134
             enfocada en sostenibilidad ambiental y cuidado del entorno.
         </p>
 
